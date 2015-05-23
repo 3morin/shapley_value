@@ -1,6 +1,6 @@
 ShapleyValue::Application.routes.draw do
-  resources :values
   root 'main_pages#home'
+  resources :values
   match '/calc', to: 'values#new', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
