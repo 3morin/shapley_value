@@ -1,4 +1,8 @@
 ShapleyValue::Application.routes.draw do
+  resources :values
+  root 'main_pages#home'
+  match '/calc', to: 'values#new', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
