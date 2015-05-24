@@ -1,0 +1,12 @@
+<%= form_for(@value) do |f| %>
+  <%= render 'shared/error_messages' %>
+
+  <%= f.label :value_a %>
+  <%= f.number_field :value_a %>
+
+  <%= f.label :value_b %>
+  <%= f.number_field :value_b %>
+
+  <%= f.submit "計算", class: "btn btn-large btn-primary" %>
+<% end %>
+
